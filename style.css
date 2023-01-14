@@ -1,0 +1,301 @@
+/* fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Open+Sans&family=Poppins:wght@400;700;800&family=Work+Sans:wght@400;700&display=swap');
+
+/* common styles start */
+body{
+    font-family: 'Poppins', sans-serif;
+    color: #1d1d1d;
+    background-color: rgb(238, 235, 235);
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+}
+.bold-font{
+    font-weight: 700;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    align-items: center;
+}
+.container img{
+    width: 100%;
+}
+.container p{
+    width: 80%;
+}
+.header, .banner, .brand, .featured {
+    margin: 50px auto;
+    padding: 20px;
+}
+.button{
+    background-color: crimson;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 30px;
+    border: 0;
+    width: 180px;
+}
+.rounded{
+    border-radius: 30px;
+}
+
+/* header styles start */
+.header-tittle{
+    font-weight: 700;
+    font-size: 24px;
+}
+.header-tittle h3{
+    margin: 0;
+}
+.navigation, .nav-bar ul, .nav-icon {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.nav-bar li{
+    list-style: none;
+}
+.nav-bar li a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+}
+.menu-bar{
+    display: none;
+}
+/* header styles end */
+
+/* banner styles start */
+.banner{
+    gap: 100px;
+}
+.banner h1{
+    font-size: 52px;
+    margin-bottom: 0;
+}
+.image-with-bg-color {
+    position: relative;
+}
+.back-color{
+    background-color: rgb(243, 206, 206);
+    width: 330px;
+    height: 300px;
+    position: absolute;
+    left: 70px;
+    top: 40px;
+    z-index: -1;
+    border-radius: 50%;
+}
+/* banner styles end */
+
+/* brand styles start */
+.brand{
+    width: 90%;
+    margin: 50px auto;
+    justify-content: space-evenly;
+    gap: 20px;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+.brand img{
+    width: 100px;
+    height: auto;
+}
+/* brand styles end */
+
+/* collection styles start */
+.collection{
+    margin: 100px auto;
+    max-width: 1300px;
+}
+.collection .section-tittle{
+    text-align: center;
+}
+.card-collection{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.card-item{
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    line-height: 15px;
+}
+.card-rating{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+.card-rating i{
+    color: orangered;
+    font-size: small;
+}
+.more-card{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: end;
+    align-items: center;
+    gap: 20px;
+    color: crimson;
+    margin-top: 50px;
+}
+/* collection styles end */
+
+/* featured section styles start */
+
+/* featured section styles start */
+
+/* footer styles start */
+.footer{
+    background-color:  #0A0826;
+    color: white;
+    text-align: center;
+    padding: 50px;
+    margin: 0 auto;
+}
+.footer .info{
+    line-height: 15px;
+}
+.footer .icon{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: x-large;
+    margin-top: 40px;
+}
+/* footer styles end */
+
+
+
+/* media queary styles for mobile */
+
+@media screen and (max-width: 576px){
+    /* common styles start */
+    .container{
+        margin: 20px;
+    }
+    .container p{
+        width: 100%;
+    }
+    .button{
+        margin: 0 auto;
+    }
+    .banner, .featured{
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 30px;
+    }
+    /* common styles end */
+
+    /* header styles start */
+    .container{
+        gap: 10px;
+    }
+    .header-tittle{
+        font-size: 16px;
+    }
+    .menu-bar{
+        display: inline;
+    }
+    .menu-bar i{
+        color: #1d1d1d;
+    }
+    #menu{
+        display: none;
+    }
+    .fa-magnifying-glass {
+        display: none;
+    }
+    .navigation {
+        gap: 0;
+    }
+    /* header styles start */
+
+    /* banner styles start */
+    .banner h1{
+        font-size: 28px;
+        margin-bottom: 0;
+    }
+    .banner img{
+        width: 60%;
+        height: auto;
+    }
+    .back-color{
+        display: none;
+    }
+    /* banner styles end */
+    
+    /* brand styles start */
+    .brand{
+        flex-wrap: wrap;
+        border: 0;
+        margin: 0 auto;
+    }
+    .brand img{
+        width: 60px;
+        height: auto;
+    }
+    /* brand styles end */
+
+    /* featured styles start */
+    .featured h1{
+        font-size: 24px;
+    }
+    /* featured styles end */
+
+    /* collection cards style start */
+    .collection .section-tittle h1{
+        text-align: center;
+        font-size: 24px;
+    }
+    .card-collection{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .more-card{
+        margin-right: 20px;
+    }
+    /* collection cards style end */
+
+    /* footer styles start */
+    .footer{
+        font-size: small;
+    }
+    .footer .icon{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: x-large;
+    margin-top: 40px;
+}
+    /* footer styles end */
+}
+
+
+/* media queary styles for tablet */
+
+@media screen and (min-width: 577px) and (max-width: 786px) {    
+    /* banner styles start */
+    .back-color{
+        display: none;
+    }
+    /* banner styles end */
+
+    /* collection cards style end */
+    .card-collection{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .more-card{
+        margin-right: 20px;
+    }
+    /* collection cards style end */
+}
